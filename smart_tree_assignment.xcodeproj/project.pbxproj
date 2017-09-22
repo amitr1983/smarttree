@@ -20,7 +20,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1721D6CAC53A373631B172FC /* Pods-smart_tree_assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smart_tree_assignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-smart_tree_assignment/Pods-smart_tree_assignment.release.xcconfig"; sourceTree = "<group>"; };
 		28745E671F70D2E7000B53B3 /* LocaltionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocaltionViewController.swift; sourceTree = "<group>"; };
 		28745E731F72294A000B53B3 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		28745E751F7234CA000B53B3 /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
@@ -32,8 +31,9 @@
 		28AA1C1A1F70433200C4E11E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28AA1C1C1F70433200C4E11E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28AA1C461F70A6CC00C4E11E /* QRScannerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerController.swift; sourceTree = "<group>"; };
+		52CB388F0A80B24F30A00DA8 /* Pods-smart_tree_assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smart_tree_assignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-smart_tree_assignment/Pods-smart_tree_assignment.release.xcconfig"; sourceTree = "<group>"; };
 		DB91AE4C6DD0337A53E8402B /* Pods_smart_tree_assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smart_tree_assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E313B76EC3CF82325976A309 /* Pods-smart_tree_assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smart_tree_assignment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smart_tree_assignment/Pods-smart_tree_assignment.debug.xcconfig"; sourceTree = "<group>"; };
+		EFDC49BE71A97A017E97D6AD /* Pods-smart_tree_assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smart_tree_assignment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smart_tree_assignment/Pods-smart_tree_assignment.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +61,8 @@
 			children = (
 				28AA1C0F1F70433200C4E11E /* smart_tree_assignment */,
 				28AA1C0E1F70433200C4E11E /* Products */,
-				3F9B33A32B3276FC25561A01 /* Pods */,
 				22833A49121EC654C7D36CFC /* Frameworks */,
+				EA33BAFE35E4C7010BDEA5A9 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,11 +91,11 @@
 			path = smart_tree_assignment;
 			sourceTree = "<group>";
 		};
-		3F9B33A32B3276FC25561A01 /* Pods */ = {
+		EA33BAFE35E4C7010BDEA5A9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E313B76EC3CF82325976A309 /* Pods-smart_tree_assignment.debug.xcconfig */,
-				1721D6CAC53A373631B172FC /* Pods-smart_tree_assignment.release.xcconfig */,
+				EFDC49BE71A97A017E97D6AD /* Pods-smart_tree_assignment.debug.xcconfig */,
+				52CB388F0A80B24F30A00DA8 /* Pods-smart_tree_assignment.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -179,11 +179,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-smart_tree_assignment/Pods-smart_tree_assignment-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SwiftQRCode/SwiftQRCode.framework",
+				"${BUILT_PRODUCTS_DIR}/ImageSlideshow/ImageSlideshow.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftQRCode.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageSlideshow.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -356,7 +356,7 @@
 		};
 		28AA1C201F70433200C4E11E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E313B76EC3CF82325976A309 /* Pods-smart_tree_assignment.debug.xcconfig */;
+			baseConfigurationReference = EFDC49BE71A97A017E97D6AD /* Pods-smart_tree_assignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L7YB54A645;
@@ -370,7 +370,7 @@
 		};
 		28AA1C211F70433200C4E11E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1721D6CAC53A373631B172FC /* Pods-smart_tree_assignment.release.xcconfig */;
+			baseConfigurationReference = 52CB388F0A80B24F30A00DA8 /* Pods-smart_tree_assignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L7YB54A645;

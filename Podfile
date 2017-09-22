@@ -6,5 +6,5 @@ target 'smart_tree_assignment' do
   use_frameworks!
 
   # Pods for smart_tree_assignment
-pod 'SwiftQRCode'
+pod 'ImageSlideshow'
 end

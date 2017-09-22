@@ -109,6 +109,7 @@ class LocaltionViewController: UIViewController, MKMapViewDelegate, CLLocationMa
 
                 let pointAnnotation = MKPointAnnotation()
                 pointAnnotation.title = item.placemark.name
+                
                 pointAnnotation.coordinate = CLLocationCoordinate2DMake(item.placemark.coordinate.latitude, item.placemark.coordinate.longitude)
             
                 let pinAnnotationView = MKPinAnnotationView(annotation: pointAnnotation, reuseIdentifier: nil)
@@ -179,6 +180,7 @@ class LocaltionViewController: UIViewController, MKMapViewDelegate, CLLocationMa
         
         let annotation = view.annotation?.coordinate
         print(annotation?.latitude)
+        print(view.annotation)
 
         let request = MKDirectionsRequest()
         

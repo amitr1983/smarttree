@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '3FD07079104C97B88039469E2483EDE4'
-               BlueprintName = 'Pods-smart_tree_assignment'
+               BlueprintIdentifier = '854A358F694791FC141F75E15F82BB64'
+               BlueprintName = 'ImageSlideshow-ImageSlideshow'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods-smart_tree_assignment.framework'>
+               BuildableName = 'ImageSlideshow.bundle'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

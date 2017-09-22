@@ -110,7 +110,11 @@ class QRScannerController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
         if (metadataObjects.count > 0 && metadataObjects.first is AVMetadataMachineReadableCodeObject) {
             let scan = metadataObjects.first as! AVMetadataMachineReadableCodeObject
             let alertController = UIAlertController(title: "Barcode Scanned", message: scan.stringValue, preferredStyle: .alert)
-            alertController.addAction(UIAlertAction(title: "OK", style: .default, handler:nil))
+            alertController.addAction(UIAlertAction(title: "Show Information", style: UIAlertActionStyle.default, handler: //nil))
+                {action in
+                    UIApplication.shared.open(NSURL(string: scan.stringValue)! as URL)
+            }))
+            alertController.addAction(UIAlertAction(title: "Close", style: .default, handler:nil))
             present(alertController, animated: true, completion: nil)
         }
     }
